@@ -39,7 +39,7 @@ function runMe() {
                 });
             }
             else {
-                console.log("We don't have enough in stock. Try again Bitch.");
+                console.log("We don't have enough in stock. Try again.");
                 runMe();
             }
         });
@@ -48,7 +48,7 @@ function runMe() {
 
 
 function display() {
-    console.log("Shit you can buy:\n");
+    console.log("Things you can buy:\n");
     connection.query("SELECT * FROM products", function (err, res) {
         if (err) throw err;
         // Log all results of the SELECT statement
