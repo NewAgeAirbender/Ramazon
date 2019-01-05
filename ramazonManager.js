@@ -67,7 +67,7 @@ function addMore() {
     inquirer.prompt([
         {
             type: "input",
-            message: "Which item id is it?",
+            message: "What is the id of the item you want to add?",
             name: "id"
         },
         {
